@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>javascript-mobile-desktop-geolocation Demo With No Simulation</title>
+	<style>
+		.error { color: red;}
+		ul { display: none;}
+	</style>
+</head>	
+<body>
+<input type="text" name="contact_no_input_field" id="contact_no_input_field">
+<input type="button" value="SMS" onclick="call_fun()">
+
+<script type="text/javascript">
+function call_fun()
+{
+     var contact_no = $('#contact_no_input_field').val();
+     window.location.href="whatsapp://?contact_no="+contact_no;
+}
+</script>
+</body>
+</html>
